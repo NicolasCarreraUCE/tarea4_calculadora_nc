@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <script src="js/calculadora.js"></script>
+</head>
+<body>
+    <head></head>
+    <nav></nav>
+    <section>
+        <form action="#" class="contenedor">
+            <div class="pantalla">
+                <label id="num1" for="" onclick="
+                        idNum = 'num1';
+                        document.getElementById('num1').style.textDecoration = 'underline'
+                        document.getElementById('num2').style.textDecoration = 'none';"
+                    style="text-decoration: underline;">0</label>
+                <label id="operador" for="">+</label>
+                <label id="num2" for="" onclick="
+                        idNum = 'num2';
+                        document.getElementById('num1').style.textDecoration = 'none';
+                        document.getElementById('num2').style.textDecoration = 'underline';"
+                    >0</label>
+                <label id="igualdad" for="">=</label>
+                <label id="resultado" for=""></label>
+            </div>
+            <button id="btn1" onclick="document.getElementById(idNum).innerHTML = 1">1</button>
+            <button id="btn2" onclick="document.getElementById(idNum).innerHTML = 2">2</button>
+            <button id="btn3" onclick="document.getElementById(idNum).innerHTML = 3">3</button>
+            <button id="btnMas" onclick="document.getElementById('operador').innerHTML = '+'">+</button>
+
+            <button id="btn4" onclick="document.getElementById(idNum).innerHTML = 4">4</button>
+            <button id="btn5" onclick="document.getElementById(idNum).innerHTML = 5">5</button>
+            <button id="btn6" onclick="document.getElementById(idNum).innerHTML = 6">6</button>
+            <button id="btnMenos" onclick="document.getElementById('operador').innerHTML = '-'">-</button>
+
+            <button id="btn7" onclick="document.getElementById(idNum).innerHTML = 7">7</button>
+            <button id="btn8" onclick="document.getElementById(idNum).innerHTML = 8">8</button>
+            <button id="btn9" onclick="document.getElementById(idNum).innerHTML = 9">9</button>
+            <button id="btnMultiplicacion" onclick="document.getElementById('operador').innerHTML = '*'">*</button>
+
+            <button id="btn0" onclick="document.getElementById(idNum).innerHTML = 0">0</button>
+            <button id="btnIgual" onclick="document.getElementById('resultado').innerHTML = resultado(document.getElementById('operador').innerHTML, parseInt(document.getElementById('num1').innerHTML), parseInt(document.getElementById('num2').innerHTML))">=</button>
+            <button id="btnDivision" onclick="document.getElementById('operador').innerHTML = '/'">/</button>
+        </form>
+    </section>
+    <footer></footer>
+</body>
+</html>
