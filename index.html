@@ -46,6 +46,15 @@
             <button id="btn0" onclick="document.getElementById(idNum).innerHTML = 0">0</button>
             <button id="btnIgual" onclick="document.getElementById('resultado').innerHTML = resultado(document.getElementById('operador').innerHTML, parseInt(document.getElementById('num1').innerHTML), parseInt(document.getElementById('num2').innerHTML))">=</button>
             <button id="btnDivision" onclick="document.getElementById('operador').innerHTML = '/'">/</button>
+
+            <button id="btnReset" onclick="
+                idNum = 'num1';
+                document.getElementById('num1').style.textDecoration = 'underline';
+                document.getElementById('num2').style.textDecoration = 'none';
+                document.getElementById('num1').innerHTML = 0;
+                document.getElementById('num2').innerHTML = 0;
+                document.getElementById('resultado').innerHTML = '';
+            ">Reset</button>
         </form>
     </section>
     <footer></footer>
